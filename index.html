@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bell Bound</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <canvas id="game-canvas"></canvas>
+      <div id="ui-layer">
+        <button id="leave-room-btn" class="hidden">← Leave Room</button>
+        <div id="audio-controls">
+          <button id="tempo-btn" title="Toggle Tempo Mode">🎵 Tempo: Low</button>
+          <button id="mute-btn" title="Toggle Sound Mute">🔊 Sound On</button>
+        </div>
+        <div id="resonance-device" class="hidden">
+          <div class="slot locked" id="slot-1">1: Hope</div>
+          <div class="slot" id="slot-2">2: Anger</div>
+          <div class="slot locked" id="slot-3">3: Acceptance</div>
+          <div class="slot locked" id="slot-4">4: Fear</div>
+          <div id="active-emotion">Active: None</div>
+          <div id="action-hint">Press F to use</div>
+          <div id="btn-container" class="hidden">
+            <button id="stop-btn">STOP</button>
+            <button id="dont-stop-btn">DON'T STOP</button>
+          </div>
+        </div>
+        <div id="dialogue-box" class="hidden"></div>
+        
+        <div id="chat-ui" class="hidden">
+          <button id="chat-close">✕</button>
+          <div id="chat-history"></div>
+          <div id="chat-input-container">
+            <input type="text" id="chat-input" placeholder="Say something..." autocomplete="off">
+            <button id="chat-send">Talk</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/script.js"></script>
+  </body>
+</html>

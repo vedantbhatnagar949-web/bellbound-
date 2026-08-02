@@ -1,0 +1,6 @@
+{
+  "name": "Bell Bound",
+  "description": "An atmospheric puzzle-adventure game where you manipulate emotions to solve puzzles in a frozen world. Features xAI Grok NPC chat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
