@@ -13,7 +13,7 @@ async function startServer() {
   app.post('/api/chat', async (req, res) => {
     try {
       const { npc, message, state } = req.body;
-      const apiKey = process.env.GROK_API_KEY || process.env.XAI_API_KEY;
+      const apiKey = process.env.GROK_API_KEY || process.env.XAI_API_KEY || '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';
       
       if (!apiKey) {
         return res.status(500).json({ error: 'GROK_API_KEY is not set in environment.' });
